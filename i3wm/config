@@ -186,6 +186,9 @@ bar {
 # Starts audio on login
 exec_always start-pulseaudio-x11
 
+# Starts NetworkManager on login
+exec --no-startup-id nm-applet
+
 # Enables touchpad tap-click
 exec_always xinput set-prop 12 303 1 
 
